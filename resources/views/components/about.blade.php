@@ -17,7 +17,7 @@
                                         <p><span class="title-s">Profile: </span> <span>full stack
                                                 developer</span></p>
                                         <p><span class="title-s">Email: </span>
-                                            <span>gencehan@pro.com</span>
+                                            <span>gencehangurcam@gmail.com</span>
                                         </p>
                                         <p><span class="title-s">Phone: </span> <span>+32485592162</span></p>
                                     </div>
@@ -25,31 +25,13 @@
                             </div>
                             <div class="skill-mf">
                                 <p class="title-s">Skill</p>
-                                <span>HTML</span> <span class="pull-right">90%</span>
+                                @foreach ($about as $about)
+                                <span>{{ $about->competence }}</span> <span class="pull-right">{{ $about->level }}%</span>
                                 <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 90%;"
+                                    <div class="progress-bar" role="progressbar" style="width:{{ $about->level }}%"
                                         aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <span>CSS3</span> <span class="pull-right">80%</span>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="75"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>JAVASCRIPT</span> <span class="pull-right">70%</span>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="90"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>PHP</span> <span class="pull-right">50%</span>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                                <span>REACT</span> <span class="pull-right">50%</span>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
+                                @endforeach
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -60,23 +42,22 @@
                                     </h5>
                                 </div>
                                 <p class="lead">
-                                    Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu
-                                    erat, accumsan id
-                                    imperdiet et, porttitor
-                                    at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-                                    porttitor accumsan tincidunt.
+                                    I am a young developper, I always want to learn more, I am dynamic I manage the
+                                    digital aspect in
+                                    a versatile way, from the creation
+                                    of site to the creation of pub, logo, community manager.
                                 </p>
                                 <p class="lead">
-                                    Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor
-                                    eget felis
-                                    porttitor volutpat. Vestibulum
-                                    ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
+                                    what more to say about me, I am quite sociable, I like to work in team, do not hesitate
+                                    to contact
+                                    me in the contact page,
+                                    I will be happy to help you for anything, or if you just have a question
                                 </p>
                                 <p class="lead">
-                                    Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in,
-                                    elementum id enim.
-                                    Nulla porttitor accumsan
-                                    tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+                                    Feel free to browse the site, see our services, we are professional, hope to see you soon,
+                                    do not hesitate
+                                    to launch your project,
+                                    and use our services!
                                 </p>
                             </div>
                         </div>

@@ -80,14 +80,12 @@
                                 </div>
                                 <div class="socials">
                                     <ul>
-                                        <li><a href=""><span class="ico-circle"><i
+                                        <li><a href="https://www.facebook.com/profile.php?id=1634567862"><span class="ico-circle"><i
                                                         class="ion-social-facebook"></i></span></a></li>
-                                        <li><a href=""><span class="ico-circle"><i
+                                        <li><a href="https://www.instagram.com/gen_cehan/"><span class="ico-circle"><i
                                                         class="ion-social-instagram"></i></span></a></li>
-                                        <li><a href=""><span class="ico-circle"><i
-                                                        class="ion-social-twitter"></i></span></a></li>
-                                        <li><a href=""><span class="ico-circle"><i
-                                                        class="ion-social-pinterest"></i></span></a></li>
+                                        <li><a href="https://www.linkedin.com/in/gencehan-gurcam-412733227/"><span class="ico-circle"><i
+                                                        class="ion-social-linkedin"></i></span></a></li>
                                     </ul>
                                 </div>
                             </div>

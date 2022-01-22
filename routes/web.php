@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\FrontController;
+use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,8 +16,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/',[FrontController::class, "index"])->name("home");
 
-Route::get('/admin', [AdminController::class, 'admin'])->name("admin");
+//ABOUT CONTROLLER
+
+Route::get('/admin', [AboutController::class, 'index'])->name("admin");
+
+//POST METHOD without CREATE page because the forms is in HOME page.
+Route::post('/store',[AboutController::class,'store'])->name('store');
+
+//DELETE METHOD
+Route::delete('/{id}/destroy',[AboutController::class,'destroy'])->name("destroy");
+
+//upadte edit
+Route::get("/{id}/edit",[AboutController::class,"edit"])->name("edit");
+Route::put("/{id}/update",[AboutController::class,"update"])->name("update");
+
+
+//Services Controller
+
