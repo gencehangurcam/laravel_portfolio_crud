@@ -15,15 +15,16 @@
             </div>
         </div>
         <div class="row">
+            @foreach ($service as $service)
             <div class="col-md-4">
                 <div class="service-box">
                     <div class="service-ico">
-                        <span class="ico-circle"><i class="ion-monitor"></i></span>
+                        <span class="ico-circle"><i class="ion-{{ $service->icone }}"></i></span>
                     </div>
                     <div class="service-content">
-                        <h2 class="s-title">Web Design</h2>
+                        <h2 class="s-title">{{ $service->title }}</h2>
                         <p class="s-description text-center">
-                            Que ce soit pour creer un simple logo ou jusqu'à une pub dynamique.
+                            {{ $service->description }}
                             {{-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
                             Quia,
                             provident vitae! Magni
@@ -32,6 +33,7 @@
                     </div>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 </section>

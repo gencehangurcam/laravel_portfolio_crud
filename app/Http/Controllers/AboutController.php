@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\About;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -10,19 +11,25 @@ class AboutController extends Controller
     public function index()
     {
         $about = About::all();
-        return view("admin.home", compact("about"));
+        $service = Service::all();
+        return view("admin.home", compact("about", "service"));
     }
     public function store(Request $request)
     {
+        request()->validate([
+            "competence" => ["required", "min:1", "max:20"],
+            "level" => ["required", "numeric"],
+        ]);
+
         $about = new About();
         $about->competence = $request->competence;
         $about->level = $request->level;
         $about ->save();
-        return redirect()->route('admin');
+        return redirect()->route('admin')->with("success", " well added article");
     }
     public function destroy(About $id){
         $id->delete();
-        return redirect()->back();
+        return redirect()->back()->with("warning", "deleted data");
     }
     public function edit(About $id) {
         $about = $id;

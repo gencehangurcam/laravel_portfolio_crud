@@ -6,6 +6,6 @@
 @section('content')
     @include("admin.components.about.about")
     @include("admin.components.services.services")
-    @include("admin.components.work")
+    @include("admin.components.work.work")
     @include("admin.components.contact")
 @endsection
