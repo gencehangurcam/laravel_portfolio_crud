@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CrateWorksTable extends Migration
+class CreateContactsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,12 @@ class CrateWorksTable extends Migration
      */
     public function up()
     {
-        Schema::create('work', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             $table->id();
-            $table->string("title", 30);
-            $table->string("photo");
-            $table->string("datum", 50);
+            $table->string("name");
+            $table->string("email");
+            $table->string("subject");
+            $table->string("message");
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CrateWorksTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('contacts');
     }
 }

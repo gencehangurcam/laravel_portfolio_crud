@@ -27,7 +27,7 @@
                 </label>
             </div>
             <div class="md:w-2/3">
-                <input class="form-input block w-full focus:bg-white" id="competence" type="string" name="competence">
+                <input class="form-input block w-full focus:bg-white" id="competence" type="string" name="competence" value="{{ old('competence') }}">
                 <p class="py-2 text-sm text-gray-600">add competence</p>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 </label>
             </div>
             <div class="md:w-2/3">
-                <input class="form-input block w-full focus:bg-white" id="level" type="number" name="level">
+                <input class="form-input block w-full focus:bg-white" id="level" type="number" name="level" value="{{ old('level') }}">
                 <p class="py-2 text-sm text-gray-600">percentage</p>
             </div>
         </div>
@@ -96,7 +96,7 @@
                         <button
                             class="bg-yellow-700 hover:bg-blue-700 text-white font-bold py-1 px-2 border border-blue-500 rounded"
                             class="btn btn-success">
-                            <a href="{{ route('edit', $about->id) }}">Edit</a>
+                            <a href="{{ route('about.edit', $about->id) }}">Edit</a>
                         </button>
                     </td>
                 </tr>

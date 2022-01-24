@@ -2,7 +2,7 @@
 <h2 class="font-sans font-bold break-normal text-gray-700 px-2 pb-8 text-xl">Section: Services</h2>
 
 <!--Card-->
-<div id='section2' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
+<div id='section3' class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
     @if ($errors->any())
         <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative my-12" role="alert">
             <ul>
@@ -27,7 +27,7 @@
                 </label>
             </div>
             <div class="md:w-2/3">
-                <input class="form-input block w-full focus:bg-white" id="title" type="string" name="title" value="">
+                <input class="form-input block w-full focus:bg-white" id="title" type="string" name="title" value="" value="{{ old('title') }}">
                 <p class="py-2 text-sm text-gray-600">services</p>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 </label>
             </div>
             <div class="md:w-2/3">
-                <select name="icone" class="form-select block w-full focus:bg-white" id="icone" type="string"
+                <select name="icone" class="form-select block w-full focus:bg-white" id="icone" type="string" value="{{ old('icone') }}"
                     name="icone">
                     <option value="Default">please choice</option>
                     <option value="A">camera</option>

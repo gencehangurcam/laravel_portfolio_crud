@@ -14,7 +14,8 @@
                                     </h5>
                                 </div>
                                 <div>
-                                    <form action="" method="post" role="form" class="contactForm">
+                                    <form action="{{ route("contact.store") }}" method="post" role="form" class="contactForm">
+                                        @csrf
                                         <div id="sendmessage">Your message has been sent. Thank you!</div>
                                         <div id="errormessage"></div>
                                         <div class="row">

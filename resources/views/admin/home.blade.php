@@ -7,5 +7,5 @@
     @include("admin.components.about.about")
     @include("admin.components.services.services")
     @include("admin.components.work.work")
-    @include("admin.components.contact")
+    @include("admin.components.contact.contact")
 @endsection
