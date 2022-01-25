@@ -39,6 +39,8 @@ Route::put("/{id}/update",[AboutController::class,"update"])->name("about.update
 //Services Controller //////////////
 //////-------------------------
 
+Route::get('/admin/services', [ServicesController::class, 'index'])->name("admin.services");
+
 //POST METHOD without CREATE page because the forms is in HOME page.
 Route::post('/admin/services/store',[ServicesController::class,'store'])->name('services.store');
 
@@ -52,6 +54,9 @@ Route::put("/admin/services/{id}/update",[ServicesController::class,"update"])->
 
 //Work Controller //////////////////////
 //------------------------------
+
+Route::get('/admin/work', [WorkController::class, 'index'])->name("admin.work");
+
 
 //POST METHOD without CREATE page because the forms is in HOME page.
 Route::post('/admin/work/store',[WorkController::class,'store'])->name('work.store');
@@ -68,6 +73,9 @@ Route::put("/admin/work/{id}/update",[WorkController::class,"update"])->name("wo
 
 //Contact Controller //////////////////////
 //------------------------------
+
+Route::get('/admin/contact', [ContactController::class, 'index'])->name("admin.contact");
+
 
 //POST METHOD without CREATE page because the forms is in HOME page.
 Route::post('/admin/contact/store',[ContactController::class,'store'])->name('contact.store');

@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\About;
-use App\Models\Contact;
-use App\Models\Service;
-use App\Models\Work;
 use Illuminate\Http\Request;
 
 class AboutController extends Controller
@@ -13,10 +10,7 @@ class AboutController extends Controller
     public function index()
     {
         $about = About::all();
-        $service = Service::all();
-        $work = Work::all();
-        $contact = Contact::all();
-        return view("admin.home", compact("about", "service", "work", "contact"));
+        return view("admin.home", compact("about"));
     }
     public function store(Request $request)
     {

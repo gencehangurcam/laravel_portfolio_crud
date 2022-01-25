@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
+    public function index()
+    {
+        $contact = Contact::all();
+        return view("admin.pages.contact.contact", compact("contact"));
+    }
+
     public function store(Request $request)
     {
         $contact = new Contact();

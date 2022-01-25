@@ -14,26 +14,26 @@
             style="top:6em;" id="menu-content">
             <ul class="list-reset py-2 md:py-0">
                 <li class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent">
-                    <a href='#section2'
+                    <a href='{{ route("admin") }}'
                         class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
                         <span class="pb-1 md:pb-0 text-sm">Section: about</span>
                     </a>
                 </li>
                 <li class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent">
-                    <a href='#section3'
+                    <a href='{{ route("admin.services") }}'
                         class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
                         <span class="pb-1 md:pb-0 text-sm">Section: services</span>
                     </a>
                 </li>
                 <li class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent">
-                    <a href='#section4'
+                    <a href='{{ route("admin.work") }}'
                         class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
                         <span class="pb-1 md:pb-0 text-sm">Section: work</span>
                     </a>
                 </li>
 
                 <li class="py-1 md:my-2 hover:bg-yellow-100 lg:hover:bg-transparent border-l-4 border-transparent">
-                    <a href='#section5'
+                    <a href='{{ route("admin.contact") }}'
                         class="block pl-4 align-middle text-gray-700 no-underline hover:text-yellow-600">
                         <span class="pb-1 md:pb-0 text-sm">Section: contact</span>
                     </a>

@@ -104,11 +104,11 @@
 
         </section>
         <!--/Section container-->
-
+{{-- 
         <!--Back link -->
         <div class="w-full lg:w-4/5 lg:ml-auto text-base md:text-sm text-gray-600 px-4 py-24 mb-12">
           <span class="text-base text-yellow-600 font-bold">&lt;</span> <a href="#" class="text-base md:text-sm text-yellow-600 font-bold no-underline hover:underline">Back link</a>
-         </div>
+         </div> --}}
 
       </div>
       <!--/container-->

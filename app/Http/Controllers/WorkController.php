@@ -7,6 +7,12 @@ use Illuminate\Http\Request;
 
 class WorkController extends Controller
 {
+    public function index()
+    {
+        $work = Work::all();
+        return view("admin.pages.work.work", compact("work"));
+    }
+
     public function store(Request $request)
     {
         request()->validate([
